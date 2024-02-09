@@ -6,8 +6,8 @@ The aim of this project is to analyse a dataset containing. For the most part, i
 
 ## Instructions
 Three files needed for running the code are:
-- `df_france.rds`: this is the training file. It contains all of the variables needed for the analysis (see below). The PassengerId included go from 1 to 891.
-- `df_paris_arrond.rds`: this is the testing file. It contains the same variables as the train.csv file, except for the one we are trying to predict (Survival). The PassengerId included go from 892 to 1309.
+- `df_france.rds`: .
+- `df_paris_arrond.rds`:
 - `df_paris_regions`:
 - `df_paris_regions_centroid`:
 - `df_regions_arrond`:
