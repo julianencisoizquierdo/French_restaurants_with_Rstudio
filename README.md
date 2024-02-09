@@ -1,7 +1,7 @@
 # Visualisations with ggplot - Analysis of French restaurants
 
 ## Outline of the project
-The aim of this project is to analyse datasets containing information about French restaurants and their locations. An important goal was to develop a good understanding of different features of ggplot. Additionally, it helped me getting better performing common dataset transformations (group_by, summarise, select, join_left, etc.). 
+The aim of this project is to analyse datasets containing information about French restaurants and their locations. An important personal goal was to develop a good understanding of different features of ggplot. Additionally, working on this project helped me getting better performing common dataset transformations (group_by, summarise, select, join_left, etc.). 
 
 
 ## Instructions
