@@ -8,10 +8,10 @@ The aim of this project is to analyse a dataset containing. For the most part, i
 Three files needed for running the code are:
 - `df_france.rds`: this dataset contains information about more 33,584 French restaurants. The attributes include the location, the price level, the features, the type of cuisine, amongst others.
 - `df_paris_arrond.rds`: it contains information about certain geometric features of the different arrondissements
-- `df_paris_regions`: it cointains geometric information about the departments (i.e: the elements of the arrondissements)
-- `df_paris_regions_centroid`: it contains some geometric information about the departments as well. In this case, the unique identifier of the departments are contained in the column l_qu. 
-- `df_regions_arrond`: this maps the departments to the arrondissements
-- `df_restaurant_regions`: this table contains information about Parisian restaurants
+- `df_paris_regions.rds`: it cointains geometric information about the departments (i.e: the elements of the arrondissements)
+- `df_paris_regions_centroid.rds`: it contains some geometric information about the departments as well. In this case, the unique identifier of the departments are contained in the column l_qu. 
+- `df_regions_arrond.rds`: this maps the departments to the arrondissements
+- `df_restaurant_regions.rds`: this table contains information about Parisian restaurants
 
 
 ## Content overview
