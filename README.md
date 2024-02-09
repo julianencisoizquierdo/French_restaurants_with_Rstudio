@@ -5,7 +5,7 @@ The aim of this project is to analyse datasets containing information about Fren
 
 
 ## Instructions
-Three files needed for running the code are:
+The following files are needed for running the code are:
 - `df_france.rds`: this dataset contains information about more 33,584 French restaurants. The attributes include the location, the price level, the features, the type of cuisine, amongst others
 - `df_paris_arrond.rds`: it contains information about certain geometric features of the different arrondissements
 - `df_paris_regions.rds`: it cointains geometric information about the departments (i.e: the elements of the arrondissements)
@@ -15,7 +15,7 @@ Three files needed for running the code are:
 
 
 ## Content overview
-The following are the main transformations performed in the dataset:
+The following are the visuals of the notebook:
 - Scatterplot with geographic data (the location of the restaurants)
 - Map of Paris, with a border for the arrondissements and another for the departments
 - The same map with two different fillings. Firstly with the absolute review counts, and then with a ratio of the review count to the population of the department
