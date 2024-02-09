@@ -1,84 +1,49 @@
 # Visualisations with ggplot - Analysis of French restaurants
 
-## Content of the project
+## Outline of the project
 The aim of this project is to analyse a dataset containing. For the most part, it makes use of different features of ggplot, as well as of basic transormations of the dataset (group_by, summarise, select, join_left, etc.). 
 
 
 ## Instructions
 Three files needed for running the code are:
-- `df_france.rds`: .
-- `df_paris_arrond.rds`:
-- `df_paris_regions`:
-- `df_paris_regions_centroid`:
-- `df_regions_arrond`:
-- `df_restaurant_regions`:
+- `df_france.rds`: this dataset contains information about more 33,584 French restaurants. The attributes include the location, the price level, the features, the type of cuisine, amongst others.
+- `df_paris_arrond.rds`: it contains information about certain geometric features of the different arrondissements
+- `df_paris_regions`: it cointains geometric information about the departments (i.e: the elements of the arrondissements)
+- `df_paris_regions_centroid`: it contains some geometric information about the departments as well. In this case, the unique identifier of the departments are contained in the column l_qu. 
+- `df_regions_arrond`: this maps the departments to the arrondissements
+- `df_restaurant_regions`: this table contains information about Parisian restaurants
 
 
-
-
-## Methodology
+## Content overview
 The following are the main transformations performed in the dataset:
-- Delete the Fare column. The reason is that it is very correlated with the Class column
-
-
-
-
-### Machine Learning Methodology
-
-
-### Results and Discussion
-
+- Scatterplot with geographic data (the location of the restaurants)
+- Map of Paris, with a border for the arrondissements and another for the departments
+- The same map with two different fillings. Firstly with the absolute review counts, and then with a ratio of the review count to the population of the department
+- A frequency polygon that shows the distribution of reviews across different cities
+- Density plots for the distribution of reviews across cities and across price levels
+- A heat map of the cities and the different price levels
 
 
 ## Usage
 
-To run the analysis, open the `titanic_julian_enciso.ipynb` notebook and execute each cell sequentially. Ensure that the required datasets are in the correct file paths.
+To run the analysis, open the `French_restaurants_analysis.Rmd` notebook and execute each cell sequentially. Ensure that the required datasets are in the correct file paths.
 
 
 ## Dependencies
 
 The following libraries are used in different parts of the project:
-- Pandas
-- Numpy
-- Matplotlib.pyplot
-- Seaborn
-- Os
-- Xgboost
-- Lightgbm
-- Sklearn.ensemble
-- Sklearn.linear_model
-- Sklearn.svc
-- Sklearn.neighbors
-- Sklearn.naive_bayes
-- Sklearn.tree
-- Sklearn.model_selection
-- Sklearn.preprocessing
-- Sklearn.metrics
-
+- tidyverse
+- ggplot2
 
 Proceed to their installation with the following code:
 
 ```
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import os
-import xgboost as xgb
-import lightgbm as lgb
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+library(tidyverse)
+library(ggplot2)
 ```
 
 ## Installation
-Ensure that you have Python installed on your system. If not, you can download it from [python.org](https://www.python.org/downloads/).
+Ensure that you have RStudio installed on your system. If not, you can download it from https://posit.co/downloads/. 
 
 
 ## Usage
@@ -95,4 +60,4 @@ This project is not open-source, and it does not come with a specific open-sourc
 If you are interested in using or collaborating on this project, please send me an email to julian.enciso.izquierdo@gmail.com.
 
 ## Acknowledgments
-The project uses data from Startup_Dataset.xlsx, which was kindly shared by Professor Howard Zhong. Special thanks to him for his valuable feedback.
+Special thanks to Mostafa Rezaei for his instructions and guidance.
